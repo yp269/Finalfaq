@@ -5,9 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Questions
+                    <div class="card-header">Vote Page
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
-                            Create a question
+                            Click here to VOTE!!
                         </a>
 
                         <div class="card-body">
@@ -30,7 +30,7 @@
                                                 <p class="card-text">
 
                                                     <a class="btn btn-primary float-right" href="{{ route('questions.show', ['id' => $question->id]) }}">
-                                                        View
+                                                        Click to view vote details
                                                     </a>
                                                 </p>
                                             </div>
@@ -40,7 +40,7 @@
 
                                 @empty
 
-                                        There are no questions to view, you can create a question.
+                                        Please click the VOTE button to submit the person's name, THANK YOU!
 
                                 @endforelse
 

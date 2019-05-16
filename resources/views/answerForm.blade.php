@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Create Answer</div>
+                    <div class="card-header">Please provide some comments.</div>
                     <div class="card-body">
                         @if($edit === FALSE)
                             {!! Form::model($answer, ['route' => ['answers.store', $question], 'method' => 'post']) !!}

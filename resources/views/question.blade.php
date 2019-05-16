@@ -5,7 +5,7 @@
         <div class="row ">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Question</div>
+                    <div class="card-header">You have successful submitted!</div>
 
                     <div class="card-body">
 
@@ -14,11 +14,11 @@
                     <div class="card-footer">
                         <a class="btn btn-primary float-right"
                            href="{{ route('questions.edit',['id'=> $question->id])}}">
-                            Edit Question
+                            Re-submit
                         </a>
 
                         {{ Form::open(['method'  => 'DELETE', 'route' => ['questions.destroy', $question->id]])}}
-                        <button class="btn btn-danger float-right mr-2" value="submit" type="submit" id="submit">Delete
+                        <button class="btn btn-danger float-right mr-2" value="submit" type="submit" id="submit">Cancel Vote
                         </button>
                         {!! Form::close() !!}
                     </div>
@@ -29,7 +29,7 @@
                 <div class="card">
                     <div class="card-header"><a class="btn btn-primary float-left"
                                                 href="{{ route('answers.create', ['question_id'=> $question->id])}}">
-                            Answer Question
+                            Write Comments
                         </a></div>
 
                     <div class="card-body">
@@ -40,7 +40,7 @@
 
                                     <a class="btn btn-primary float-right"
                                        href="{{ route('answers.show', ['question_id'=> $question->id,'answer_id' => $answer->id]) }}">
-                                        View
+                                        Click to view comments
                                     </a>
 
                                 </div>
